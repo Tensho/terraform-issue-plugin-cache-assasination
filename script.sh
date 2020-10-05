@@ -21,8 +21,8 @@ terraform init provider-null
 # >>> Here ninja comes and assassinates cached provider. For example, it could happen if you manually change providers layout due to the new hierarchical providers layout in Terraform 0.13.
 
 # Delete "null" provider binary file from cache
-rm -rf ~/.terraform.d/provider-caches/registry.terraform.io/hashicorp/null/2.1.0/darwin_amd64
-# Now we have broken symlink: .terraform/plugins/... –> ~/.terraform.d/provider-caches/...
+rm -rf ~/.terraform.d/providers-cache/registry.terraform.io/hashicorp/null/2.1.0/darwin_amd64
+# Now we have broken symlink: .terraform/plugins/... –> ~/.terraform.d/providers-cache/...
 
 # >>> Let's try to work with "archive" provider in "provider-archive" project...
 
